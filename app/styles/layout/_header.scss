@@ -1,0 +1,52 @@
+.header {
+  position: relative;
+  color: $gray-1;
+  background-color: #599111;
+  @include laptop {
+    background-color: black;
+  };
+  @include tablets {
+    background-color: violet;
+  };
+}
+
+.header__top {
+  padding: rem(20px) 0;
+  text-align: center;
+  color: #fff;
+}
+
+.header__logo {
+  display: inline-block;
+  vertical-align: middle;
+  align-self: center;
+  // width: 12.5%;
+  // width: rem(120px);
+  // margin-right: 2.55%;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and #{($xlg-point-df)} {
+
+}
+@media screen and #{($lg-point-df)} {
+
+}
+@media screen and #{($md-point-df)} {
+
+}
+@media screen and #{($sm-point-df)} {
+
+}
+@media screen and #{($xs-point-df)} {
+
+}

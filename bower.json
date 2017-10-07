@@ -1,0 +1,17 @@
+{
+  "name": "Cloud hosting",
+  "version": "1.0.0",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "normalize-css": "^7.0.0",
+    "picturefill": "^3.0.2",
+    "jquery": "^3.2.0",
+    "css-hamburgers": "^0.8.1"
+  }
+}
