@@ -2,7 +2,7 @@
 
 document.addEventListener("DOMContentLoaded", function() {
   (function() {
-    console.log("start");
+
 
     nojsreplace();
     function nojsreplace() {
@@ -23,6 +23,10 @@ document.addEventListener("DOMContentLoaded", function() {
         action.toggleClass("header__action--mobile");
       });
     }
+
+
+
+
 
     // btn Up
     scrollUp();

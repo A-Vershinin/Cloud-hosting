@@ -1,11 +1,10 @@
-
-
-nav.menu
+nav.menu#js-menu
   button(type="button" aria-label="Menu" aria-controls="navigation").hamburger.menu__hamburger.hamburger--collapse
-      span.hamburger-box
-        span.hamburger-inner
+    span.visually-hidden Открыть меню
+    span.hamburger-box
+      span.hamburger-inner
   ul.menu__list
-    - var items = ["Home", "Products", "Hot Deals", "About", "Contats"]
+    - var items = ["Hosting", "Domains", "Features", "Testimonials", "Contacts"]
     each menu in items
       if menu == "Hot Deals"
         li.menu__item

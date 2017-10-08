@@ -1,6 +1,12 @@
 header.header
   .header__top
     .container.header__container
-      .header__logo Logo
-      .header__desc Yeoman-kit-project
-        
+      .header__logo
+       include ../blocks/_logo
+      .header__nav
+        include ../blocks/_menu
+      .header__user
+        a(href="#").btn.header__login login
+  .header__bottom
+    .container.header__container
+      include ../blocks/_hero
