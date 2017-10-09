@@ -1,0 +1,41 @@
+.domain {
+  padding: 40px 0;
+  text-align: center;
+  color: #000;
+  background-color: #fff;
+}
+.domain__container {
+
+}
+.domain__title {
+  margin-bottom: 15px;
+  font-size: 40px;
+  line-height: 1.3;
+  font-family: $font-base;
+  font-weight: 300;
+  color: #000;
+}
+.domain__desc {
+  margin-bottom: 50px;
+}
+.domain__search-block {
+  max-width: 640px;
+  margin: 0 auto 40px;
+  padding: 10px 1%; //10
+  background-color: #953b48;
+  background: linear-gradient(to right,  #953b48 0%,#38334d 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#953b48", endColorstr="#38334d",
+    GradientType=1 );
+}
+.domain__search {
+
+}
+.domain__search-input {
+
+}
+.domain__search-btn  {
+
+}
+.domain__steps {
+
+}

@@ -1,0 +1,50 @@
+.steps {
+  @extend %ul-reset;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+
+}
+.steps__item {
+  width: 30%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+  margin-right: 5%;
+  padding-right: 2.55%; //30
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
+}
+.steps__icon {
+  display: inline-block;
+  vertical-align: top;
+  width: 60px;
+  height: 40px;
+  @extend %hide-text;
+  background-image: url("../../img/domain-sprite.png");
+  @extend %cover;
+}
+.steps__icon--find {
+  background-position: -48px 0;
+}
+.steps__icon--choose {
+  background-position: 16px 0;
+}
+.steps__icon--build {
+  background-position: -122px 0;
+}
+.steps__content {
+  flex: 1;
+  text-align: left;
+}
+.steps__title  {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000;
+}
+.steps__text  {
+  line-height: 20px;
+  color: #5e5e5e;
+}
