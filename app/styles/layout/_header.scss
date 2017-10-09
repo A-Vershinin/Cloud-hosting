@@ -1,36 +1,55 @@
 .header {
   position: relative;
-  color: $gray-1;
-  background-color: #599111;
-  @include laptop {
-    background-color: black;
-  };
-  @include tablets {
-    background-color: violet;
-  };
+  min-height: 554px;
+  display: flex;
+  flex-direction: column;
+  color: $light-1;
+  background-color: $gray-1;
+  background-image: url("../../img/bg/header.jpg");
+  @extend %cover;
 }
 
 .header__top {
-  padding: rem(20px) 0;
-  text-align: center;
-  color: #fff;
+  padding: 20px 0;
+  border-bottom: 1px solid #424348;
 }
-
+.header__container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3.25%;
+}
 .header__logo {
-  display: inline-block;
-  vertical-align: middle;
-  align-self: center;
-  // width: 12.5%;
-  // width: rem(120px);
-  // margin-right: 2.55%;
+  width: 232px;
 }
-
-
-
-
-
-
-
+.header__nav {
+  max-width: 625px;
+  width: 590px;
+  margin-left: 3%; //30
+  flex-grow: 1;
+}
+.header__user {
+  width: 94px;
+}
+.header__login {
+  padding: 12px 27px;
+  font-size: 14px;
+  color: #fff;
+  background-color: transparent;
+  border: 1px solid #e84c3d;
+  border-radius: 0;
+  &:active {
+    color: rgba(255, 255, 255, 0.7);
+    border: 0;
+  }
+}
+.header__bottom {
+  .header__container {
+    flex-direction: column;
+  }
+  padding: 100px 0;
+}
 
 
 

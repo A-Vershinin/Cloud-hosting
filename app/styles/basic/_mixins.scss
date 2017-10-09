@@ -199,17 +199,19 @@
 }
 //контейнер desktop резиновый px
 %container-desktop-fluid {
+  max-width: $lg-width;
   min-width: 320px;
   margin: 0 auto;
+  padding: 0 1.25%; //30
   box-sizing: border-box;
-  @media screen and #{($xlg-point-df)} {
-    max-width: $xlg-width;
-    padding: 0 1.25%; //30
-  }
-  @media screen and #{($lg-point-df)} {
-    max-width: $lg-width;
-    padding: 0 1.25%;
-  }
+  //@media screen and #{($xlg-point-df)} {
+  //  max-width: $xlg-width;
+  //  padding: 0 1.25%; //30
+  //}
+  //@media screen and #{($lg-point-df)} {
+  //  max-width: $lg-width;
+  //  padding: 0 1.25%;
+  //}
   @media screen and #{($md-point-df)} {
     max-width: $md-width;
     padding: 0 2.5%;
@@ -225,6 +227,7 @@
 }
 //контейнер mobile резиновый px
 %container-mobile-fluid {
+  width: 100%;
   margin: 0 auto;
   box-sizing: border-box;
   @media screen and #{($xs-point-df)} {

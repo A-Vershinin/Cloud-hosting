@@ -1,8 +1,5 @@
 .menu {
-  max-width: rem(585px);
-  display: inline-block;
-  vertical-align: top;
-  font-size: 1rem;
+  min-height: 40px;
 }
 .menu__hamburger {
   position: relative;
@@ -25,26 +22,27 @@
   left: 0;
 }
 .menu__list {
-  display: block;
   @extend %ul-reset;
-  font-size: 0;
+  //font-size: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  flex-grow: 1;
   transition: 0.5s;
 }
 .menu__item {
-  display: inline-block;
-  vertical-align: top;
   font-size: 1rem;
 }
 .menu__link {
   position: relative;
   display: block;
-  padding: rem(13px) rem(20px);
+  padding: rem(14px) rem(20px);
   font-size: rem(16px);
   line-height: 1;
   font-weight: 400;
   font-family: $font-base;
   text-decoration: none;
-  color: $gray-1;
+  color: $light-1;
   background-color: transparent;
   cursor: pointer;
   transition: 0.3s;
@@ -56,6 +54,10 @@
   }
   &:active {
     color: $accent-active;
+    &::after {
+      background-color: $accent-active;
+      transition: 0.3s;
+    }
   }
   &::after {
     content: "";

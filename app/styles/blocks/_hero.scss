@@ -1,0 +1,43 @@
+.hero__title {
+  margin-bottom: 15px;
+  font-size: 40px;
+  font-family: $font-base;
+  font-weight: 300;
+  text-align: center;
+  color: $light-1;
+}
+.hero__text {
+  margin-bottom: 50px;
+  text-align: center;
+  color: $light-1;
+}
+.hero__btn {
+  margin-bottom: 30px;
+  padding: 16px 64px;
+  font-size: 16px;
+  line-height: 1;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: #e84c3d;
+  border-radius: 0;
+  border: 0;
+  &:hover {
+    background-color: #e12c1b;
+  }
+  &:active {
+    background-color: #e12c1b;
+    box-shadow: 0 0 1px 1px #E12C19;
+  }
+}
+.hero__row {}
+.hero__link {
+  display: block;
+  font-size: 12px;
+  text-transform: uppercase;
+  text-decoration: underline;
+  color: $light-1;
+  cursor: pointer;
+  &:hover {
+    text-decoration: none;
+  }
+}

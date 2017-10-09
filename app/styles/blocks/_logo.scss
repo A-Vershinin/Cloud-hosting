@@ -1,14 +1,38 @@
 .logo {
   display: inline-block;
   vertical-align: top;
-  max-width: rem(120px);
-  max-height: rem(40px);
+  //max-width: rem(120px);
+  //max-height: rem(40px);
   overflow: hidden;
 }
 .logo__link {
-  display: block;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
   // width: rem(120px);
   // height: rem(40px);
   text-decoration: none;
   cursor: pointer;
+}
+.logo__wrap {
+  width: 56px;
+  img {
+    width: 56px;
+    height: 36px;
+  }
+}
+.logo__slogan {
+  flex: 1;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 20px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+}
+.logo__slogan--accent {
+  span {
+    margin-left: 5px;
+    color: $accent;
+  }
 }
