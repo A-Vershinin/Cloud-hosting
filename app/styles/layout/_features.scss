@@ -1,0 +1,73 @@
+.features {
+  padding: 40px 0;
+  color: $light-1;
+  background-color: #2c3039;
+}
+
+.features__title  {
+  margin-bottom: 15px;
+  font-size: 40px;
+  font-family: $font-base;
+  font-weight: 300;
+  text-align: center;
+  color: #fff;
+}
+.features__list {
+  @extend %ul-reset;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+.features__icon {
+  display: inline-block;
+  vertical-align: top;
+  width: 40px;
+  height: 30px;
+  background-image: url("../../img/features-sprite.png");
+  @extend %cover;
+  @extend %hide-text;
+}
+.features__icon--love {
+  background-position: 6px 0;
+}
+.features__icon--data {
+  background-position: 5px -65px;
+}
+.features__icon--server {
+  background-position: 5px -130px;
+}
+.features__icon--fully {
+  background-position: 6px -30px;
+}
+.features__icon--backups {
+  background-position: 6px -98px;
+}
+.features__icon--cloud {
+  background-position: 0 -156px;
+}
+.features__content {
+  flex: 1;
+  padding-left: 20px;
+}
+.features__item {
+  width: 30%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  margin-right: 5%;
+  padding-right: 2.55%; //30
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
+}
+.features__item-title  {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+}
+.features__text  {
+  line-height: 20px;
+  color: #bfbfbf;
+}
