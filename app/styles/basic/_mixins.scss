@@ -308,7 +308,7 @@
 }
 
 //миксин скрытия текста
-@mixin hide-text() {
+%hide-text {
   overflow: hidden;
   text-indent: 101%;
   white-space: nowrap;
