@@ -1,0 +1,50 @@
+.subscribe {
+  color: $light-1;
+  background-color: #2c3039;
+  border-top: 1px solid #586073;
+  border-bottom: 1px solid #586073;
+}
+.subscribe__container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+.subscribe__follow,
+.subscribe__form-wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  width: 50%;
+  padding: 20px 0;
+  border-right: 1px solid #42454d;
+}
+.subscribe__form-wrapper {
+  border-right: none;
+}
+.subscribe__follow-title,
+.subscribe__form-title {
+  width: 25%;
+  font-size: 12px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.subscribe__social {
+  width: 75%;
+  padding-right: 5%;
+}
+
+.subscribe__form-title {
+  text-align: center;
+}
+.subscribe__form {
+  width: 60%;
+}
+.subscribe__input {
+  height: 40px;
+}
+.subscribe__btn {
+  max-width: 80px;
+  height: 40px;
+  padding: 0 24px;
+}

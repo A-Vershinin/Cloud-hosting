@@ -46,6 +46,12 @@
     background-color: #e84c3d;
     border-bottom-color: #e84c3d;
   }
+  & .plans__btn {
+    background-color: #e84c3d;
+    &:hover {
+      background-color: #e12c1b;
+    }
+  }
 }
 .plans__header {
   padding: 20px 0 10px;
@@ -91,9 +97,9 @@
   line-height: 1;
   font-weight: 700;
   color: #fff;
-  background-color: #e84c3d;
+  background-color: #2c3039;
   &:hover {
-    background-color: #e12c1b;
+    background-color: #3e4350;
   }
   &:active {
     background-color: #e12c1b;

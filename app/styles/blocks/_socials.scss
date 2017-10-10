@@ -1,44 +1,37 @@
 .socials {
   @extend %ul-reset;
-  font-size: 0;
-  text-align: right;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: center;
 }
 .socials__item {
   display: inline-block;
   vertical-align: middle;
-  margin-left: 10%;
-  font-size: 16px;
-  &:first-child {
-    margin-left: 0;
-  }
-}
-.socials__link {
-  display: block;
-  width: 20px;
-  height: 20px;
-  text-decoration: none;
-  cursor: pointer;
-  transition: 0.25s;
-  svg {
-    fill: $gray-1;
-  }
+  width: 24px;
+  height: 24px;
+  margin-left: 8.5%;
+  background-image: url("../../img/social-icons.png");
+  opacity: 0.3;
+  transition: opacity .2s, transform .2s;
+  @extend %cover;
+  @extend %hide-text;
   &:hover {
-    svg {
-      fill: $accent;
-    }
+    opacity: 1;
   }
   &:active {
-    svg {
-      fill: $accent-active;
-    }
+    transform: scale(1.06);
   }
 }
-// @media screen and #{($laptop-point-widths-des)} {
-//
-// }
-// @media screen and #{($tablet-point-widths-des)} {
-//
-// }
-// @media screen and #{($phone-point-widths-des)} {
-//
-// }
+.socials__item--tw {
+  background-position: 0 0;
+}
+.socials__item--fb {
+  background-position: -54px 0;
+}
+.socials__item--lk {
+  background-position: -120px 0;
+}
+.socials__item--inst {
+  background-position: -180px 0;
+}
