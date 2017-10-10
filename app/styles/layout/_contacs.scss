@@ -1,0 +1,45 @@
+.contacs {}
+.contacs__map {
+  min-height: 548px;
+  padding-top: 100px;
+  color: #000000;
+  background-color: #f4f6f8;
+  background-image: url("../../img/decor/map.jpg");
+  @extend %cover;
+}
+.contacs__title {
+  margin-bottom: 30px;
+  font-size: 30px;
+  line-height: 1.35;
+  font-weight: 400;
+  font-family: $font-base;
+  color: #000;
+}
+.contacs__address {
+  //color: #000;
+  margin-bottom: 30px;
+  font-size: 18px;
+  line-height: 20px;
+  font-style: normal;
+}
+.contacs__workdays {
+  font-size: 12px;
+}
+.contacs__block {
+  font-size: 0;
+}
+.contacs__tell,
+.contacs__mail {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+  font-size: 16px;
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+}
+.contacs__mail  {
+  margin-right: 0;
+  text-decoration: underline;
+  color: #e84c3d;
+}
