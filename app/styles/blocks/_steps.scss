@@ -20,24 +20,25 @@
 .steps__icon {
   display: inline-block;
   vertical-align: top;
-  width: 60px;
+  width: 50px;
   height: 40px;
   @extend %hide-text;
-  background-image: url("../../img/domain-sprite.png");
+  background-image: url("../../img/icons-sprite.png");
   @extend %cover;
 }
 .steps__icon--find {
-  background-position: -48px 0;
+  background-position: -246px 0;
 }
 .steps__icon--choose {
-  background-position: 16px 0;
+  background-position: -62px 0;
 }
 .steps__icon--build {
-  background-position: -122px 0;
+  background-position: -342px 0;
 }
 .steps__content {
   flex: 1;
   text-align: left;
+  padding-left: 20px;
 }
 .steps__title  {
   font-weight: 700;

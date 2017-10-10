@@ -1,0 +1,95 @@
+.post {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  max-width: 960px;
+  width: 84%; //960
+  margin: 0 auto;
+  padding: 20px 0;
+  padding-left: 60px;
+  padding-right: 20px;
+  border-bottom: 1px solid #dedede;
+  box-sizing: border-box;
+  &:last-child {
+    border-bottom: none;
+  }
+}
+.post__left {
+  width: 70%;
+  text-align: left;
+  padding-right: 20px;
+}
+.post__right {
+  max-width: 220px;
+  min-height: 180px;
+  width: 30%;
+}
+.post__title {
+  margin-bottom: 10px;
+}
+.post__title-link {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 20px;
+  line-height: 1.4;
+  font-weight: 400;
+  font-family: $font-second;
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+  &:hover {
+    color: $red-1-hover;
+  }
+  &:active {
+    color: $red-1-active;
+    text-decoration: none;
+  }
+}
+.post__info {
+  margin-bottom: 10px;
+  font-size: 0;
+}
+.post__info-item {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 14px;
+  margin-left: 20px;
+  &:first-child {
+    margin-left: 0;
+  }
+}
+.post__icon {
+  display: inline-block;
+  vertical-align: middle;
+  width: 14px;
+  height: 14px;
+  margin-right: 3px;
+  background: url("../../img/icons-sprite.png") no-repeat;
+  @extend %cover;
+  @extend %hide-text;
+}
+.post__icon--heart {
+  background-position: 2px 0;
+}
+.post__text {
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 20px;
+}
+.post__text-more  {
+  color: $red-1;
+  cursor: pointer;
+  &:hover {
+    color: $red-1-hover;
+    text-decoration: none;
+  }
+  &:active {
+    color: $red-1-active;
+  }
+}
+.post__image-link {
+  display: block;
+}
+.post__img {
+  background-color: #f4f6f8;
+}

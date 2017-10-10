@@ -13,6 +13,8 @@
   border: 1px solid $light-1;
   border-radius: rem(4px);
   text-overflow: ellipsis;
+  text-align: center;
+  white-space: nowrap;
   cursor: pointer;
   box-sizing: border-box;
   outline: 0;

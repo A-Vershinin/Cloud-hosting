@@ -1,0 +1,31 @@
+.blog {
+  padding: 40px 0;
+  text-align: center;
+  color: #000;
+  background-color: #fff;
+}
+.blog__title {
+  margin-bottom: 15px;
+  font-size: 40px;
+  line-height: 1.4;
+  font-weight: 300;
+  font-family: $font-second;
+  color: #000;
+}
+.blog__list {
+  @extend %ul-reset;
+  margin-bottom: 40px;
+}
+.blog__more {
+  padding: 16px 72px;
+  font-size: 14px;
+  line-height: 1;
+  font-weight: 700;
+  color: #fff;
+  background-color: #2c3039;
+  border: 0;
+  border-radius: 0;
+  &:active {
+    box-shadow: 0 0 1px 1px #e12c19;
+  }
+}
