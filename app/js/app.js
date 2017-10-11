@@ -1,4 +1,4 @@
-"use strict";
+// "use strict";
 
 document.addEventListener("DOMContentLoaded", function() {
   (function() {
@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function() {
       // console.log(document.documentElement);
     }
 
-    toggleMenu();
+    // toggleMenu();
     function toggleMenu() {
       var menuHam = $(".menu__hamburger");
       var menu = $(".menu__list");
@@ -25,12 +25,53 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
 
+    function scrollToSection() {
+      var btn = document.getElementById("js-get-started");
+      btn.addEventListener("click", function btnHandler(e) {
+        e.preventDefault();
+        var planOffSet = $("#js-plans").offset().top;
+
+
+        $("html, body").animate({
+          scrollTop: planOffSet
+        }, 500);
+        console.log(planOffSet);
+      });
+    }
+    // scrollToSection();
+
+
+    headerFixed("page", "js-header", "header--fixed"); // добавляем активный класс header--fixed
+    function headerFixed(pageBlock, headerBlock, fixedClass) {
+      const wrapper = document.getElementById(pageBlock) || null;
+      const header = document.getElementById(headerBlock) || null;
+      const headerFirstChild = header.firstElementChild || null;;
+      const headerNextChild = header.lastElementChild || null;
+      const headerFixedClass = fixedClass || undefined;
+      const headerFirstChildHeight = headerFirstChild.offsetHeight + "px";
+
+      wrapper.addEventListener("scroll", scrollHandler);
+      function scrollHandler() {
+        const scrolled = this.scrollTop;
+        if (scrolled > header.offsetHeight) {
+          header.classList.add(headerFixedClass);
+          headerNextChild.style.marginTop = headerFirstChildHeight;
+        } else {
+          header.classList.remove(headerFixedClass);
+          headerNextChild.removeAttribute("style");
+        }
+      }
+    }
+
+
+
+
 
 
 
     // btn Up
-    scrollUp();
-    function scrollUp() {
+    // btnCrollUp();
+    function btnCrollUp() {
       var winHeight = $(document).height(),
         step = 4,
         timeToScroll = winHeight / step,
