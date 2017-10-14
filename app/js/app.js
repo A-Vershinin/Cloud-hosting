@@ -1,4 +1,4 @@
-// "use strict";
+"use strict";
 
 document.addEventListener("DOMContentLoaded", function() {
   (function() {
@@ -25,48 +25,43 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
 
-    function scrollToSection() {
-      var btn = document.getElementById("js-get-started");
-      btn.addEventListener("click", function btnHandler(e) {
-        e.preventDefault();
-        var planOffSet = $("#js-plans").offset().top;
 
-
-        $("html, body").animate({
-          scrollTop: planOffSet
-        }, 500);
-        console.log(planOffSet);
+    var headerFixed = setHeaderFixed("js-header", "header--fixed"); // добавляем активный класс header--fixed
+    function setHeaderFixed(jsHeader, fixedClass) {
+      var header = $("#" + jsHeader),
+        headerHeight = header.height(),
+        headerBottom = header.children().last(),
+        headerTopHeight = header.children().first().height();
+      $(document).on("scroll", function () {
+        var documentScroll = $(this).scrollTop();
+        if (documentScroll > headerHeight) {
+          header.addClass(fixedClass);
+          headerBottom.css({
+            "marginTop": headerTopHeight
+          });
+        } else {
+          headerBottom.removeAttr("style");
+          header.removeClass(fixedClass);
+        }
       });
     }
-    // scrollToSection();
 
 
-    headerFixed("page", "js-header", "header--fixed"); // добавляем активный класс header--fixed
-    function headerFixed(pageBlock, headerBlock, fixedClass) {
-      const wrapper = document.getElementById(pageBlock) || null;
-      const header = document.getElementById(headerBlock) || null;
-      const headerFirstChild = header.firstElementChild || null;;
-      const headerNextChild = header.lastElementChild || null;
-      const headerFixedClass = fixedClass || undefined;
-      const headerFirstChildHeight = headerFirstChild.offsetHeight + "px";
+    var scrollToSections = setScrollToSections("header__top", "menu__link", 750);
+    function setScrollToSections(headerTop, link, timeScroll) {
+      var link = $("." + link);
+      var headerTop = $("." + headerTop).height();
 
-      wrapper.addEventListener("scroll", scrollHandler);
-      function scrollHandler() {
-        const scrolled = this.scrollTop;
-        if (scrolled > header.offsetHeight) {
-          header.classList.add(headerFixedClass);
-          headerNextChild.style.marginTop = headerFirstChildHeight;
-        } else {
-          header.classList.remove(headerFixedClass);
-          headerNextChild.removeAttribute("style");
-        }
-      }
+      link.on("click", function scrollHandler(e) {
+        e.preventDefault();
+        var currentBlock = $(this).attr("href");
+        var currentBlockOffset = $("#" + currentBlock).offset().top;
+
+        $("html, body").animate({
+          scrollTop: currentBlockOffset - headerTop
+        }, timeScroll);
+      });
     }
-
-
-
-
-
 
 
     // btn Up

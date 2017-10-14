@@ -14,7 +14,6 @@
     top: 0;
     left: 0;
     right: 0;
-    padding: 5px 0;
     background-color: #2c3039;
     transition: 0.3s linear;
   }
@@ -36,7 +35,7 @@
   width: 232px;
 }
 .header__nav {
-  max-width: 625px;
+  //max-width: 625px;
   width: 590px;
   margin-left: 3%; //30
   flex-grow: 1;
