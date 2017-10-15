@@ -25,8 +25,9 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
 
+    // добавляем активный класс header--fixed
+    var headerFixed = setHeaderFixed("js-header", "header--fixed");
 
-    var headerFixed = setHeaderFixed("js-header", "header--fixed"); // добавляем активный класс header--fixed
     function setHeaderFixed(jsHeader, fixedClass) {
       var header = $("#" + jsHeader),
         headerHeight = header.height(),
@@ -46,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function() {
       });
     }
 
-
+    // скролл по секциями
     var scrollToSections = setScrollToSections("header__top", "menu__link", 750);
     function setScrollToSections(headerTop, link, timeScroll) {
       var link = $("." + link);
@@ -62,6 +63,25 @@ document.addEventListener("DOMContentLoaded", function() {
         }, timeScroll);
       });
     }
+
+    // попапы на кнопке login и кнопках order
+    var popups = togglePopup("js-show-popup", "js-modal-close", 500, 300);
+    function togglePopup(popup, popupClose, timeShow, timeHidden) {
+      $("." + popup).on("click", function (e) {
+        e.preventDefault();
+        var $this = $(this);
+        var currentModal = $this.attr("data-popup");
+        $(currentModal).fadeIn(timeShow);
+        $(".overlay").fadeIn(timeShow);
+      });
+
+      $("." + popupClose).on("click", function (e) {
+        e.preventDefault();
+        $(this).parent().fadeOut(timeHidden);
+        $(".overlay").fadeOut(timeHidden);
+      });
+    }
+
 
 
     // btn Up

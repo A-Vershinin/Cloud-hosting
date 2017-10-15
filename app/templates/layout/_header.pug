@@ -6,7 +6,7 @@ header.header#js-header
       .header__nav
         include ../blocks/_menu
       .header__user
-        a(href="#").btn.header__login login
+        a(href="#", data-popup="#js-modal-login").btn.header__login.js-show-popup Login
   .header__bottom
     .container.header__container
       include ../blocks/_hero
