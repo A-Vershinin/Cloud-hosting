@@ -14,6 +14,7 @@
 
 // BEM-блоки //
 // index.html
+@import "blocks/_animations";
 @import "blocks/_wrapper.scss";
 @import "blocks/_btn.scss";
 @import "blocks/_contact-form.scss";
@@ -28,7 +29,8 @@
 @import "blocks/_post.scss";
 @import "blocks/_subscribe.scss";
 @import "blocks/_overlay";
-@import "blocks/modals";
+@import "blocks/_modals";
+
 
 
 // layout-секции //

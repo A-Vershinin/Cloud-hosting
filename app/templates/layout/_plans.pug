@@ -3,7 +3,7 @@ section.plans#js-plans
     h2.plans__title Pick your plan
     p.plans__desc Upgrade, downgrade or cancel anytime.
     .plans__wrapper
-      .plans__item
+      div(data-wow-duration="1.2s", data-wow-offset="100").plans__item.wow.flipInY
         header.plans__header
           h3.plans__item-title Personal
           p.plans__item-text Perfect Pack for Small Business
@@ -25,7 +25,8 @@ section.plans#js-plans
             b 25 FTP
             | accounts
         a(href="#", data-popup="#js-modal-order").btn.plans__btn.js-show-popup Order now
-      .plans__item.plans__item--active
+      div(data-wow-delay="0.3s",
+        data-wow-duration="1.2s", data-wow-offset="100").plans__item.plans__item--active.wow.flipInY
         header.plans__header
           h3.plans__item-title Business
           p.plans__item-text Perfect Pack for Business
@@ -47,7 +48,7 @@ section.plans#js-plans
             b 25 FTP
             |  accounts
         a(href="#", data-popup="#js-modal-order").btn.plans__btn.js-show-popup Order now
-      .plans__item
+      div(data-wow-delay="0.6s", data-wow-duration="1.2s", data-wow-offset="100").plans__item.wow.flipInY
         header.plans__header
           h3.plans__item-title Corporation
           p.plans__item-text Perfect Pack for Business

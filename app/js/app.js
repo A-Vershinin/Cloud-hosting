@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // слайдер в блоке Testimonials
     var slider = setSlider("testi__list");
 
-
+    var wowOnPage = wowAnimated();
 
     // btn Up
     // var btnUp = btnSrollUp("scrollup");

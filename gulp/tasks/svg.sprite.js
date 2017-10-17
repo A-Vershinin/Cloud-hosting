@@ -3,7 +3,7 @@
 module.exports = function() {
   $.gulp.task('sprite:svg', function() {
     return $.gulp.src('./app/img/sprites/svg/*.svg')
-      // .pipe($.gp.svgmin({js2svg: {pretty: true}}))
+      .pipe($.gp.svgmin({js2svg: {pretty: true}}))
       .pipe($.gp.if(!$.dev, $.gp.svgmin({js2svg: {pretty: true}})))
       .pipe($.gp.cheerio({
         run: function ($) {
