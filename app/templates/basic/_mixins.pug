@@ -4,3 +4,13 @@ mixin list (className, items, activeItem)
       each nav, ndx in items
         li(class="#{className}__item")
           a(href="#" class="#{className}__link" + ((ndx == activeItem) ? "#{className}__link--active" : "" ))=nav
+
+
+mixin icon(classNameIcon, name, size)
+  - var size = size || 20;
+  - var sprite = "img/svg-icon-sprite.svg"
+  - var prefix = "icon-"
+
+  span(aria-hidden="true")(class=classNameIcon)
+    svg(width=size height=size)
+      use(xlink:href=sprite + "#" + prefix + name)

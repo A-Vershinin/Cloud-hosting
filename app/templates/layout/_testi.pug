@@ -2,13 +2,32 @@ section.testi#js-testi
   .container.testi__container
     h2.testi__title Testimonials
     p.testi__desc Couple of words about this section
-    ul.testi__list
-      li.testi__item
-        p.testi__text The best and most reliable VPS account I have experienced
-          |from happy-hosting. I have never expected to have such a reliable host.
-          |Thanks to them very much for their unparalleled services with excellent administration.
-        .testi__photo
-          img(src="http://placehold.it/80", width="80", height="80", alt="Testi photo").testi__img
-        p.testi__author Oscar Wild,  Pragmatic Solutions
-
+    .testi__slider
+      ul.testi__list
+        li.testi__item
+          .testi__photo
+            img(src="http://placehold.it/80", width="80", height="80", alt="Testi photo").testi__img
+          p.testi__text The best and most reliable VPS account I have experienced
+            | from happy-hosting. I have never expected to have such a reliable host.
+            | Thanks to them very much for their unparalleled services with excellent administration.
+          p.testi__author Oscar Wild,  Pragmatic Solutions
+        li.testi__item
+          .testi__photo
+            img(src="http://placehold.it/80", width="80", height="80", alt="Testi photo").testi__img
+          p.testi__text The best and most reliable VPS account I have experienced
+            | from happy-hosting. I have never expected to have such a reliable host.
+            | Thanks to them very much for their unparalleled services with excellent administration.
+          p.testi__author Jon Wild,  Pragmatic Solutions
+        li.testi__item
+          .testi__photo
+            img(src="http://placehold.it/80", width="80", height="80", alt="Testi photo").testi__img
+          p.testi__text The best and most reliable VPS account I have experienced
+            | from happy-hosting. I have never expected to have such a reliable host.
+            | Thanks to them very much for their unparalleled services with excellent administration.
+          p.testi__author Brain Wild,  Pragmatic Solutions
+      .testi__arrows
+        a(href="#").testi__arrow.testi__arrow--prev Prev
+          +icon("testi__arrow-icon","arrow-left", 40)
+        a(href="#").testi__arrow.testi__arrow--next Next
+          +icon("testi__arrow-icon","arrow-right", 40)
 

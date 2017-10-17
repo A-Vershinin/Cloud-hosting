@@ -76,6 +76,9 @@
   font-size: 14px;
   line-height: 20px;
 }
+.post__text--hidden {
+  display: none;
+}
 .post__text-more  {
   color: $red-1;
   cursor: pointer;
