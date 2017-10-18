@@ -18,13 +18,14 @@ nav.menu#js-menu
       a(href="js-contacs").menu__link Contacts
 
 
-
-//ul.menu__list
-//  - var items = ["Hosting", "Domains", "Features", "Plans", "Testimonials", "Contacts"]
-//  each menu in items
-//    if menu == "Domains"
-//      li.menu__item
-//        a(href="#").menu__link.menu__link--active=menu
-//    else
-//      li.menu__item
-//        a(href=links).menu__link=menu
+// -
+  ul.menu__list
+    - var items = ["Hosting", "Domains", "Features", "Plans", "Testimonials", "Contacts"]
+    each menu in items
+      if menu == "Domains"
+        li.menu__item
+          a(href="#").menu__link.menu__link--active=menu
+      else
+        li.menu__item
+          a(href=links).menu__link=menu
+//

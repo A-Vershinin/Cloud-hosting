@@ -2,7 +2,7 @@
 
   // documentation https://github.com/matthieua/WOW
   function wowAnimated() {
-    let wow = new WOW({
+    var wow = new WOW({
       boxClass: "wow",
       animateClass: "animated",
       offset: 150,

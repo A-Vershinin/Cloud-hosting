@@ -1,10 +1,34 @@
 .contacs__map {
+  position: relative;
   min-height: 548px;
-  padding-top: 100px;
   color: #000000;
   background-color: #f4f6f8;
   background-image: url("../img/decor/map.jpg");
   @extend %cover;
+}
+.contacs__map-wrap {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 40;
+  top: 0;
+  left: 0;
+  font-size: 0;
+}
+.contacs__map-content {
+  position: absolute;
+  z-index: 50;
+  top: 50%;
+  left: 10%;
+  margin-top: -150px;
+  width: 400px;
+  padding: 2%;
+  color: #fff;
+  background-color: rgba(#000, 0.7);
+}
+.contacs__map-title {
+  font-size: 18px;
+  margin-bottom: 5px;
 }
 .contacs__title {
   margin-bottom: 30px;
@@ -12,10 +36,10 @@
   line-height: 1.35;
   font-weight: 400;
   font-family: $font-base;
-  color: #000;
+  color: #fff;
 }
 .contacs__address {
-  //color: #000;
+  color: #fff;
   margin-bottom: 30px;
   font-size: 18px;
   line-height: 20px;
@@ -34,7 +58,7 @@
   margin-right: 10px;
   font-size: 16px;
   text-decoration: none;
-  color: #000;
+  color: #fff;
   cursor: pointer;
 }
 .contacs__mail  {

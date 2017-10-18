@@ -60,6 +60,7 @@
     "gulp-svgmin": "^1.2.2",
     "gulp-uglifyjs": "^0.6.2",
     "gulp-uncss": "^1.0.6",
+    "gulp-webp": "^2.3.0",
     "gulp.spritesmith": "^6.2.1",
     "imagemin-jpegtran": "^5.0.2",
     "imagemin-optipng": "^5.2.1",

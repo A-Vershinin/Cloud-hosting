@@ -2,23 +2,17 @@
 
 module.exports = function() {
   $.gulp.task('images', function() {
-    return $.gulp.src('./app/img/**/*.*', { since: $.gulp.lastRun('images') })
-      .pipe($.gp.if(!$.dev, $.gp.imagemin({
-        optimizationLevel: 7,
+    return $.gulp.src('./app/img/**/*.{png,jpg,gif}', { since: $.gulp.lastRun('images') })
+      .pipe($.gp.if(!$.dev,  $.gp.imagemin({
+        optimizationLevel: 3,
         progressive: true,
         svgoPlugins: [{removeViewBox: false}],
         // use: [pngquant()],
         interlaced: true
       })))
-
-      // .pipe($.gp.if(!$.dev,  $.gp.imagemin({
-      //   optimizationLevel: 5,
-      //   progressive: true,
-      //   svgoPlugins: [{removeViewBox: false}],
-      //   // use: [pngquant()],
-      //   interlaced: true
-      // })))
       // .pipe($.gp.if(!$.dev, $.gp.tinypng(YOUR_API_KEY)))
+      .pipe($.gulp.dest($.config.root + '/img'))
+      .pipe($.gp.webp({quality: 75}))
       .pipe($.gulp.dest($.config.root + '/img'));
   });
 
