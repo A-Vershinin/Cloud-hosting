@@ -32,8 +32,13 @@ document.addEventListener("DOMContentLoaded", function() {
     // слайдер в блоке Testimonials
     var slider = setSlider("testi__list");
 
+    // animation on elemets
     var wowOnPage = wowAnimated();
 
+    // google maps with pins and content
+    var googleMap = google.maps.event.addDomListener(window, 'load', initialMap);
+
+    var blogCounts = initCounters("post__info-count-comments", "post__info-count-likes");
     // btn Up
     // var btnUp = btnSrollUp("scrollup");
 

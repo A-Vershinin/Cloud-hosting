@@ -1,5 +1,5 @@
 (function () {
-  var initialMap = google.maps.event.addDomListener(window, 'load', init);
+  // var initialMap = google.maps.event.addDomListener(window, 'load', init);
 
   function init() {
     // Basic options for a simple Google Map
@@ -86,5 +86,5 @@
 
   }
 
-  window.googleMap = initialMap;
+  window.initialMap = init;
 }());
