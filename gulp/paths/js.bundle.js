@@ -7,4 +7,5 @@ module.exports = [
   './bower_modules/wow/dist/wow.js',
   './bower_modules/waypoints/lib/jquery.waypoints.js',
   './bower_modules/jquery.counterup/jquery.counterup.js',
+  './bower_modules/jquery-validation/dist/jquery.validate.js',
 ];

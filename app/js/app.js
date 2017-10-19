@@ -38,7 +38,11 @@ document.addEventListener("DOMContentLoaded", function() {
     // google maps with pins and content
     var googleMap = google.maps.event.addDomListener(window, 'load', initialMap);
 
+    // counters in blog section
     var blogCounts = initCounters("post__info-count-comments", "post__info-count-likes");
+
+    // validation email
+    var formValidation = setFormValidation("subscribe__form");
     // btn Up
     // var btnUp = btnSrollUp("scrollup");
 

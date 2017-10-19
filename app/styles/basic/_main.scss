@@ -46,17 +46,20 @@ input:focus,
 textarea:focus,
 input:required:valid,
 textarea:required:valid {
-   border: 2px solid #00B203;
+   //border: 2px solid #00B203;
+  //background-color: rgba(#00B203, 0.2);
 }
 input:valid,
 textarea:valid {
-  // border-color: #6ec292;
+   //border-color: #6ec292;
+  //background-color: rgba(#6ec292, 0.2);
 }
 input:invalid,
 textarea:invalid,
 input:focus:required:invalid,
 textarea:focus:required:invalid {
   // border-color: #f0b1b1;
+  //background-color: rgba(#f0b1b1, 0.2);
 }
 img,
 video {

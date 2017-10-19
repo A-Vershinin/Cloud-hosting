@@ -11,7 +11,7 @@
     .subscribe__form-wrapper
       label(for="subscribe__form").subscribe__form-title Subscribe
       form(action="#" method="POST", name="subscribe-search-from").search.subscribe__form#subscribe__form
-        label(for="subscribe__email").visually-hidden Подписаться
-        input(type="text" name="subscribe-email",
-          placeholder="Enter your e-mail here").search__input.subscribe__input#subscribe__email
+        label(for="subscribe__email").visually-hidden Set email
+        input(type="text" name="subscribe__email",
+          placeholder="Enter your e-mail here" required).search__input.subscribe__input#subscribe__email
         button(type="submit").search__btn.subscribe__btn Send

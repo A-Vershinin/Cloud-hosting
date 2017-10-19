@@ -10,7 +10,7 @@
   box-sizing: border-box;
   @extend %clearfix;
 }
-.search .search__input {
+.search__input {
   margin: 0;
   padding: 0;
   border-radius: 0;
@@ -33,18 +33,11 @@
   &:focus {
     color: $black-1;
     outline: 0;
-    box-shadow: 0 0 5px 1px $red-1;
-  }
-  &--valid {
-    border: 1px solid #82be3e;
-    box-shadow: 0 0 5px 1px #82be3e;
-  }
-  &--error {
-    border: 1px solid #ff0000;
-    box-shadow: 0 0 5px 1px #ff0000;
+    border-color: transparent;
+    box-shadow: 0 0 5px 2px $red-1;
   }
 }
-.search .search__btn {
+.search__btn {
   border: 0;
   border-radius: 0;
   outline: 0;
