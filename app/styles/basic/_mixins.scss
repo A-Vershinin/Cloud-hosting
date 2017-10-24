@@ -296,20 +296,45 @@
   border-radius: $width/2;
   background-color: $color;
 }
-
 // миксин placeholder
-@mixin placeholder($color: #000) {
-  $placeholders: ":-webkit-input" ":-moz" "-moz" "-ms-input";
-  @each $placeholder in $placeholders {
-    &:#{$placeholder}-placeholder {
-     color: $color;
+@mixin placeholder {
+    $placeholders: ":-webkit-input" ":-moz" "-moz" "-ms-input";
+    @each $placeholder in $placeholders {
+      &:#{$placeholder}-placeholder {
+        @content
+      }
     }
-  }
 }
+
+// миксин цвета placeholder
+@mixin placeholder-style($color: $gray-1) {
+  color: $color;
+}
+
 
 //миксин скрытия текста
 %hide-text {
   overflow: hidden;
   text-indent: 101%;
   white-space: nowrap;
+}
+@mixin broken-image($color: #000) {
+  &:before {
+    display: block;
+    content: "We're sorry, the image below is broken :(";
+    color: lighten($color, 50%);
+    font-size: 1em;
+    margin-bottom: 0.5em;
+  }
+  &:after {
+    display: block;
+    content: attr(src);
+    color: lighten($color, 50%);
+    font-size: 0.75em;
+    font-style: italic;
+    margin-top: 0.5em;
+  }
+}
+@mixin filter($filter-type, $filter-amount) {
+  filter: $filter-type + unquote('(#{$filter-amount})');
 }

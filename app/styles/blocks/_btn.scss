@@ -18,13 +18,13 @@
   cursor: pointer;
   box-sizing: border-box;
   outline: 0;
-  transition: 0.2s ease;
+  transition: 0.2s ease-in;
   user-select: none;
   &:hover {  color: $light-1;
-    background-color: $accent;
+    background-color: darken($accent, 10);
   }
   &:active {
     color: $light-1;
-    background-color: $accent-active;
+    background-color: darken($accent, 20);
   }
 }

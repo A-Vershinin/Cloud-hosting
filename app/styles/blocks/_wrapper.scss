@@ -19,3 +19,6 @@
   flex-basis: auto;
   flex: 1 0 auto;
 }
+ .wrapper--blured {
+   //@include filter(blur, .25em);
+ }

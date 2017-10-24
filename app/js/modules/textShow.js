@@ -18,3 +18,7 @@
   }
   window.showPostText = showPostText;
 }());
+
+(function () {
+
+}());

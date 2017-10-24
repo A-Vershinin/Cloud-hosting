@@ -31,16 +31,25 @@ textarea {
   line-height: $line-height-base;
   font-family: $font-base;
   border-radius: 5px;
-  @include placeholder($gray-1);
+  //@include placeholder($gray-1);
+  transition: all 0.2s ease-in;
+  cursor: pointer;
+  @include placeholder {
+    @include placeholder-style();
+  }
+  &:hover {
+    color: lighten($gray-1, 10%);
+    //background-color: darken( $gray-1, 5%);
+  }
+  &:focus {
+    color: lighten( $gray-1, 20%);
+    //background-color: darken( $gray-1, 10%);
+  }
+
 }
 a:visited,
 a:link {
   // color: $light-1;
-}
-input:hover,
-textarea:hover {
-  color: $gray-1;
-  cursor: pointer;
 }
 input:focus,
 textarea:focus,
@@ -63,10 +72,13 @@ textarea:focus:required:invalid {
 }
 img,
 video {
+  position: relative;
   display: block;
   max-width: 100%;
+  width: 100%;
   object-fit: cover;
   height: auto;
+  text-align: center;
 }
 h1,
 h2,

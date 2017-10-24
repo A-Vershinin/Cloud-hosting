@@ -29,7 +29,9 @@
   box-sizing: border-box;
   box-shadow: none;
   cursor: text;
-  @include placeholder($gray-1);
+  @include placeholder {
+    @include placeholder-style($gray-1);
+  }
   &:focus {
     color: $black-1;
     outline: 0;
