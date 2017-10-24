@@ -1,14 +1,17 @@
+$distance: 30%;
+
 .modal {
   position: fixed;
   z-index: 500;
-  top: 100px;
-  left: 50%;
-  margin-left: -250px;
-  width: 500px;
-  padding: 20px 3.5%; // 40
+  top: $distance/1.5;
+  left: $distance;
+  right: $distance;
+  //bottom: $distance;
+  padding: 2% 4%; // 40
   text-align: center;
   background-color: #fff;
   display: none;
+  animation: move 1s 1;
 }
 .modal--show {
   display: block;
@@ -46,3 +49,17 @@
   }
 }
 .modal__bnt--close {}
+
+
+@keyframes move  {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+

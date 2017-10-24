@@ -92,7 +92,10 @@
 }
 .post__image-link {
   display: block;
+  text-decoration: none;
+  color: $light-1;
 }
 .post__img {
-  background-color: #f4f6f8;
+  background-color: $gray-1;
+  @include broken-image($gray-1);
 }
