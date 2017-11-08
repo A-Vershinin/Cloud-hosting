@@ -35,8 +35,8 @@
 
     var neighborhoods = [
       // Main
-      {lat: 40.708, lng: -74.009, title: 'Cloud Hosting', decr: 'Main office', icon: 'map-pin.png'},
-      {lat: 40.712, lng: -74.016, title: 'Cloud Hosting', decr: 'Second office', icon: 'map-pin.png'},
+      {lat: 40.708, lng: -74.009, title: 'Cloud Hosting', decr: 'Main office', icon: 'map-pin@1x.png'},
+      {lat: 40.712, lng: -74.016, title: 'Cloud Hosting', decr: 'Second office', icon: 'map-pin@1x.png'},
     ];
 
     infoWindow = new google.maps.InfoWindow();

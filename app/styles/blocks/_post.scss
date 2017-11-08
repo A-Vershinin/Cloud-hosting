@@ -64,12 +64,13 @@
   width: 14px;
   height: 14px;
   margin-right: 3px;
-  background: url("../img/icons-sprite.png") no-repeat;
-  @extend %cover;
   @extend %hide-text;
+  background-color: rgba(255, 255, 255, 0.4);
+  background-repeat: no-repeat;
 }
 .post__icon--heart {
-  background-position: 2px 0;
+  @include sprite-image($icon-sm-heart-1x);
+  @include sprite-position($icon-sm-heart-1x);
 }
 .post__text {
   margin-bottom: 10px;

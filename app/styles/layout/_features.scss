@@ -22,29 +22,35 @@
 .features__icon {
   display: inline-block;
   vertical-align: top;
-  width: 40px;
+  width: 30px;
   height: 30px;
-  background-image: url("../img/features-sprite.png");
-  @extend %cover;
+  background-repeat: no-repeat;
   @extend %hide-text;
 }
+
 .features__icon--love {
-  background-position: 6px 0;
+  @include sprite-image($icon-heard-1x);
+  @include sprite-position($icon-heard-1x);
 }
 .features__icon--data {
-  background-position: 5px -65px;
+  @include sprite-image($icon-data-1x);
+  background-position: 2px -732px;
 }
 .features__icon--server {
-  background-position: 5px -127px;
+  @include sprite-image($icon-vps-1x);
+  @include sprite-position($icon-vps-1x);
 }
 .features__icon--fully {
-  background-position: 6px -30px;
+  @include sprite-image($icon-fully-1x);
+  @include sprite-position($icon-fully-1x);
 }
 .features__icon--backups {
-  background-position: 6px -98px;
+  @include sprite-image($icon-dayly-1x);
+  @include sprite-position($icon-dayly-1x);
 }
 .features__icon--cloud {
-  background-position: 0 -156px;
+  @include sprite-image($icon-cloud-1x);
+  @include sprite-position($icon-cloud-1x);
 }
 .features__content {
   flex: 1;

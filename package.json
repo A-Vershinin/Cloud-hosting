@@ -15,7 +15,7 @@
   "scripts": {
     "editorconfig": "editorconfig-cli",
     "editorconfigfix": "editorconfig-tools fix *",
-    "deploy": "git subtree push --prefix build origin gh-pages",
+    "deploy": "npm run build && gh-pages -d build",
     "codestyle": "npm run editorconfig && npm run stylelint && npm run eslint",
     "eslint": "eslint --format node_modules/eslint-friendly-formatter ./app/js",
     "stylelint": "stylelint './app/styles' --syntax scss",
@@ -69,7 +69,8 @@
     "imagemin-pngquant": "^5.0.0",
     "postcss-reporter": "^5.0.0",
     "stylelint": "8.1.x",
-    "stylelint-config-htmlacademy": "0.1.x"
+    "stylelint-config-htmlacademy": "0.1.x",
+    "svg4everybody": "^2.1.9"
   },
   "engines": {
     "node": "7.6.0"

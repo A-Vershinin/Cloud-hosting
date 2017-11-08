@@ -20,20 +20,23 @@
 .steps__icon {
   display: inline-block;
   vertical-align: top;
-  width: 50px;
+  width: 30px;
   height: 40px;
   @extend %hide-text;
-  background-image: url("../img/icons-sprite.png");
-  @extend %cover;
+  background-color: rgba(255, 255, 255, 0.2);
+  background-repeat: no-repeat;
 }
 .steps__icon--find {
-  background-position: -246px 0;
+  @include sprite-image($icon-search-1x);
+  @include sprite-position($icon-search-1x);
 }
 .steps__icon--choose {
-  background-position: -62px 0;
+  @include sprite-image($icon-mouse-1x);
+  @include sprite-position($icon-mouse-1x);
 }
 .steps__icon--build {
-  background-position: -342px 0;
+  @include sprite-image($icon-browser-1x);
+  @include sprite-position($icon-browser-1x);
 }
 .steps__content {
   flex: 1;

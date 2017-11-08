@@ -4,8 +4,11 @@
   flex-direction: column;
   color: $light-1;
   background-color: $gray-1;
-  background-image: url("../img/bg/header.jpg");
+  background-image: url("../img/bg/bg-header@1x.jpg");
   @extend %cover;
+  @media #{$retina} {
+    background-image: url("../img/bg/bg-header@2x.jpg");
+  }
 }
 .header--fixed {
   & .header__top {

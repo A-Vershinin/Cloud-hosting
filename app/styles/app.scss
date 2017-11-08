@@ -5,7 +5,8 @@
 // Переменные и миксины//
 @import "./basic/_variables.scss";
 @import "./basic/_mixins.scss";
-// @import "./basic/_png-sprites.scss";
+@import "./basic/_png-sprite@1x.scss";
+@import "./basic/_png-sprite@2x.scss";
 
 // Глобальные стили для всего проекта//
 @import "./basic/_main.scss";
@@ -43,5 +44,3 @@
 @import "./layout/_testi.scss";
 @import "./layout/_blog.scss";
 @import "./layout/_contacs.scss";
-
-

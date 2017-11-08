@@ -3,8 +3,12 @@
   min-height: 548px;
   color: #000000;
   background-color: #f4f6f8;
-  background-image: url("../img/decor/map.jpg");
+  background-image: url("../img/decor/map-desktop@1x.jpg");
   @extend %cover;
+  @include broken-image($color: #f4f6f8);
+  @media #{$retina} {
+    background-image: url("../img/decor/map-desktop@2x.jpg");
+  }
 }
 .contacs__map-wrap {
   width: 100%;

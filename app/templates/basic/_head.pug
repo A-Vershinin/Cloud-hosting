@@ -28,10 +28,11 @@ mixin head(data)
   link(rel='preload' href='fonts/Roboto/RobotoBold/roboto-bold.woff2' as='font')
   link(rel='preload' href='fonts/Roboto/RobotoLight/roboto-light.woff2' as='font')
   link(rel='preload' href='fonts/PTsans/pt-sans-bold/pt-sans-bold.woff2' as='font')
-  link(rel='preload' href='img/bg/header.jpg' as='image')
+  link(rel='preload' href='img/bg/bg-header@1x.jpg' as='image')
 
   link(rel='stylesheet' href='css/bundle.css')
   link(rel='stylesheet' href='css/app.css')
+  script document.createElement("picture")
   script(src='https://cdn.polyfill.io/v2/polyfill.min.js' acync)
 
   <!--[if lt IE 9]>

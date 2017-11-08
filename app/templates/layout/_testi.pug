@@ -6,21 +6,36 @@ section.testi#js-testi
       ul.testi__list
         li.testi__item
           .testi__photo
-            img(src="http://placehold.it/80", width="80", height="80", alt="Testi photo").testi__img
+            picture
+              source(type="image/webp"
+                srcset="img/content/testi1-desktop@1x.webp 1x, img/content/testi1-desktop@2x.webp 2x")
+              img(src="img/content/testi1-desktop@1x.jpg"
+                srcset="img/content/testi1-desktop@2x.jpg 2x" width="80" height="80"
+                alt="Testi photo").testi__img
           p.testi__text The best and most reliable VPS account I have experienced
             | from happy-hosting. I have never expected to have such a reliable host.
             | Thanks to them very much for their unparalleled services with excellent administration.
           p.testi__author Oscar Wild,  Pragmatic Solutions
         li.testi__item
           .testi__photo
-            img(src="http://placehold.it/80", width="80", height="80", alt="Testi photo").testi__img
+            picture
+              source(type="image/webp"
+              srcset="img/content/testi1-desktop@1x.webp 1x, img/content/testi1-desktop@2x.webp 2x")
+              img(src="img/content/testi1-desktop@1x.jpg"
+              srcset="img/content/testi1-desktop@2x.jpg 2x" width="80" height="80"
+              alt="Testi photo").testi__img
           p.testi__text The best and most reliable VPS account I have experienced
             | from happy-hosting. I have never expected to have such a reliable host.
             | Thanks to them very much for their unparalleled services with excellent administration.
           p.testi__author Jon Wild,  Pragmatic Solutions
         li.testi__item
           .testi__photo
-            img(src="http://placehold.it/80", width="80", height="80", alt="Testi photo").testi__img
+            picture
+              source(type="image/webp"
+              srcset="img/content/testi1-desktop@1x.webp 1x, img/content/testi1-desktop@2x.webp 2x")
+              img(src="img/content/testi1-desktop@1x.jpg"
+              srcset="img/content/testi1-desktop@2x.jpg 2x" width="80" height="80"
+              alt="Testi photo").testi__img
           p.testi__text The best and most reliable VPS account I have experienced
             | from happy-hosting. I have never expected to have such a reliable host.
             | Thanks to them very much for their unparalleled services with excellent administration.
@@ -30,4 +45,3 @@ section.testi#js-testi
           +icon("testi__arrow-icon","arrow-left", 40)
         a(href="#").testi__arrow.testi__arrow--next Next
           +icon("testi__arrow-icon","arrow-right", 40)
-

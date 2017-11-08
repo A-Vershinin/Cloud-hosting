@@ -3,11 +3,8 @@
     .subscribe__title.visually-hidden Subscribe section
     .subscribe__follow
       h4.subscribe__follow-title Follow us on
-      .socials.subscribe__social
-        a(href="#").socials__item.socials__item--tw Twitter
-        a(href="#").socials__item.socials__item--fb Facebook
-        a(href="#").socials__item.socials__item--lk Linkedin
-        a(href="#").socials__item.socials__item--inst Instagram
+      .subscribe__social
+        include ../blocks/_socials
     .subscribe__form-wrapper
       label(for="subscribe__form").subscribe__form-title Subscribe
       form(action="#" method="POST", name="subscribe-search-from").search.subscribe__form#subscribe__form

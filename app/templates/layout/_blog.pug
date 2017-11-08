@@ -26,7 +26,12 @@ section.blog
               a(href="#").post__text-more.js-read-more Read More
           .post__right
             a(href="#").post__image-link
-              img(src="img/content/photo1.jpg", width="220", height="180", alt="Photo1").post__img
+              picture
+                source(type="image/webp"
+                  srcset="img/content/photo1-desktop@1x.webp 1x, img/content/photo1-desktop@2x.webp 2x")
+                img(src="img/content/photo1-desktop@1x.jpg"
+                  srcset="img/content/photo1-desktop@2x.jpg 2x" width="220" height="180"
+                alt="Testi photo").post__img
         article(data-wow-delay="0.15s", data-wow-offset="100").post.wow.fadeInUp
           .post__left
             h3.post__title
@@ -50,7 +55,12 @@ section.blog
               a(href="#").post__text-more.js-read-more Read More
           .post__right
             a(href="#").post__image-link
-              img(src="img/content/photo2.jpg", width="220", height="180", alt="Photo2").post__img
+            picture
+              source(type="image/webp"
+                srcset="img/content/photo2-desktop@1x.webp 1x, img/content/photo2-desktop@2x.webp 2x")
+              img(src="img/content/photo2-desktop@1x.jpg"
+                srcset="img/content/photo2-desktop@2x.jpg 2x" width="220" height="180"
+              alt="Testi photo").post__img
         article(data-wow-delay="0.3s", data-wow-offset="100").post.wow.fadeInUp
           .post__left
             h3.post__title
@@ -74,5 +84,10 @@ section.blog
               a(href="#").post__text-more.js-read-more Read More
           .post__right
             a(href="#").post__image-link
-              img(src="img/content/photo2.jpg", width="220", height="180", alt="Photo3").post__img
+              picture
+                source(type="image/webp"
+                  srcset="img/content/photo3-desktop@1x.webp 1x, img/content/photo3-desktop@2x.webp 2x")
+                img(src="img/content/photo3-desktop@1x.jpg"
+                  srcset="img/content/photo3-desktop@2x.jpg 2x" width="220" height="180"
+                alt="Testi photo").post__img
     a(href="#").btn.blog__more Show more
