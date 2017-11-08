@@ -20,27 +20,28 @@
   text-align: center;;
 }
 .benefits__icon {
-  margin: 0 auto;
-  width: 80px;
-  height: 82px;
-
-  background-image: url("../img/benefits-sprite.png");
+  margin: 0 auto 20px;
+  width: 82px;
+  height: 60px;
   @extend %hide-text;
-  @extend %cover;
+  background-repeat: no-repeat;
 }
 .benefits__item--time .benefits__icon {
-  background-position: -10px 0;
+  @include sprite-image($icon-b-cloud-1x);
+  @include sprite-position($icon-b-cloud-1x);
 }
 .benefits__item--servise .benefits__icon {
-  background-position: -96px 0;
+  @include sprite-image($icon-b-serv-1x);
+  background-position: 4px -1168px;
 }
 .benefits__item--cloud .benefits__icon {
-  background-position: -185px 0;
+  @include sprite-image($icon-b-guar-1x);
+  background-position: 10px -1036px;
 }
 .benefits__item--active {
   background-color: #21242b;
 }
-.benefits__subtitle  {
+.benefits__subtitle {
   margin-bottom: 12px;
   font-weight: 700;
   text-transform: uppercase;
@@ -68,3 +69,7 @@
     color: #fff;
   }
 }
+
+//picture
+//img(src="img/content/logo-desktop@1x.png", srcset="img/content/logo-desktop@2x.png 2x"
+//width="56" height="36" alt="Cloud Hosting" title="Cloud Hosting")

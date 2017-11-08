@@ -18,7 +18,3 @@
   }
   window.showPostText = showPostText;
 }());
-
-(function () {
-
-}());

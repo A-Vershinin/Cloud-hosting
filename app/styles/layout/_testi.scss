@@ -35,10 +35,10 @@
     width: 40px;
     height: 40px;
     margin-left: -20px;
-    background-image: url("../img/icons-sprite.png");
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: -158px 0;
+    @include sprite-image($icon-quotes-1x);
+    background-position: 8px -218px;
+    
   }
 }
 .testi__item {
@@ -60,6 +60,7 @@
   width: 80px;
   height: 80px;
   border-radius: 50%;
+  background-color: #ccc;
 }
 .testi__author  {
   color: #5e5e5e;

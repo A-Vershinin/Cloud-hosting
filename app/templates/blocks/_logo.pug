@@ -2,8 +2,11 @@ div.logo
   a.logo__link
     .logo__wrap
       picture
-        img(src="img/content/logo.png", srcset="img/content/logo@2x.png 2x"
-        width="56" height="36" alt="Cloud Hosting" title="")
+        source(type="image/webp"
+          srcset="img/content/logo-desktop@1x.webp 1x, img/content/logo-desktop@2x.webp 2x")
+        img(src="img/content/logo-desktop@1x.png"
+          srcset="img/content/logo-desktop@2x.png 2x" width="56" height="36"
+          alt="Cloud Hosting" title="Cloud Hosting")(class="logo__img")
     .logo__slogan.logo__slogan--accent Nine cloud
       span hosting
-
+      

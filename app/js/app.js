@@ -3,14 +3,11 @@
 document.addEventListener("DOMContentLoaded", function() {
   (function() {
 
+    // check js & touch
+    isJsAndTouchSupported.init();
 
-    function nojsreplace() {
-      // if (document.documentElement.html.className == "no-js") {
-      //   document.body.classList.remove("no-js");
-      // }
-      // console.log(document.documentElement);
-    }
-
+    // ckeck svg local
+    svg4everybody();
     // toggleMenu
     // var headerNav = toggleMenu();
 
