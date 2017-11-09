@@ -35,7 +35,7 @@
       //   $.ajax({
       //     url: form.action,
       //     type: form.method,
-      //     dataType: 'json',
+      //     dataType: 'json'
       //     data: form.serialize(),
       //     success: function (response) {
       //       // $('.answers').html(response);
@@ -44,6 +44,9 @@
       //     }
       //   });
       //   return false;
+      
+      // }
+    });
   }
 
   window.setFormValidation = setFormValidation;
